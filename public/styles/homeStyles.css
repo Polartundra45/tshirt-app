@@ -45,3 +45,7 @@ p {
     display: flex;
     justify-content: space-evenly;
 }
+
+.productCon {
+    border: 2px solid black;
+}

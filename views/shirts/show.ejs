@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show</title>
+</head>
+<body>
+    <h1>show</h1>
+
+    <a href="/shirt">back</a>
+
+    <p><%= shirts.img %></p>
+    <p>"<%= shirts.name.toUpperCase() %>"</p>
+    <p>Price: $<%= shirts.price %>.00</p>
+    <p>Size: <%= shirts.size %></p>
+
+    <form action="/shirt/<%= shirts._id %>?_method=DELETE" method="POST">
+        <button>delete</button>
+    </form>
+
+</body>
+</html>

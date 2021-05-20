@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+    <link rel="stylesheet" href="/styles/indexStyles.css">
+</head>
+<body>
+    <h1>products</h1>
+
+    <a href="/shirt/new">add shirt</a>
+
+    <div class="con">
+        <% for(let shirt of shirts) { %> 
+            <div class="listCon">
+                <p><%= shirt.img %></p>
+                <p><a href="/shirt/<%= shirt._id %>">"<%= shirt.name.toUpperCase() %>"</a></p>
+                <p>Price: $<%= shirt.price %>.00</p>
+                <p>Size: <%= shirt.size %></p>
+            </div>
+        <% } %> 
+    </div>
+</body>
+</html>
