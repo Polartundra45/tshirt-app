@@ -1,0 +1,9 @@
+body {
+    background-image: url('/webBackground.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p, h1 {
+    color: white;
+}
