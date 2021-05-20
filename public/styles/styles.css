@@ -4,6 +4,44 @@ body {
     background-size: cover;
 }
 
-p, h1 {
+.showCaseTitle {
+    font-size: 4em;
     color: white;
+    margin-bottom: .8em;
+}
+
+p {
+    color: white;
+    font-size: 1.2em;
+}
+
+.content {
+    width: 40%;
+}
+
+.firstButton {
+    margin-top: 2em;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding: 5px 15px 5px 15px;
+    letter-spacing: .2em;
+    background-color: blue;
+    color: white;
+}
+
+.firstButton:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+.showCaseRose {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.con {
+    margin-top: 5em;
+    display: flex;
+    justify-content: space-evenly;
 }
