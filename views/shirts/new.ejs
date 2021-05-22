@@ -18,9 +18,16 @@
 
         <label for="price">price: </label>
         <input type="number" name="product[price]" id="price">
-
+<!-- 
         <label for="size">size: </label>
-        <input type="text" name="product[size]" id="size">
+        <input type="text" name="product[size]" id="size"> -->
+
+        <label for="size">size</label>
+        <select name="product[size]" id="size">
+            <option value="small">S</option>
+            <option value="medium">M</option>
+            <option value="large">L</option>
+        </select>
 
         <button>add</button>
     </form>

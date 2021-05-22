@@ -15,6 +15,12 @@
     <p>"<%= shirts.name.toUpperCase() %>"</p>
     <p>Price: $<%= shirts.price %>.00</p>
     <p>Size: <%= shirts.size %></p>
+    <label for="size">size</label>
+    <select name="size" id="size">
+        <option value="small">S</option>
+        <option value="medium">M</option>
+        <option value="large">L</option>
+    </select>
 
     <form action="/shirt/<%= shirts._id %>?_method=DELETE" method="POST">
         <button>delete</button>

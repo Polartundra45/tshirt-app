@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>products</title>
-    <link rel="stylesheet" href="/styles/indexStyles.css">
-</head>
+<%- include('../partials/head') %> 
+<link rel="stylesheet" href="/styles/indexStyles.css">
+
 <body>
-    <h1>products</h1>
+    <%- include('../partials/navBar') %> 
+   
+    <h1>Shop Our One of a Kind Shirts</h1>
 
     <a href="/shirt/new">add shirt</a>
 
@@ -18,7 +14,8 @@
                 <p><%= shirt.img %></p>
                 <p><a href="/shirt/<%= shirt._id %>">"<%= shirt.name.toUpperCase() %>"</a></p>
                 <p>Price: $<%= shirt.price %>.00</p>
-                <p>Size: <%= shirt.size %></p>
+                <p><em>Buy Now</em></p>
+                <!-- <p>Size: <%= shirt.size %></p> -->
             </div>
         <% } %> 
     </div>
