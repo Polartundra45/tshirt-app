@@ -5,7 +5,7 @@ const methodOverride = require('method-override');
 const mongoose = require('mongoose');
 
 const tshirtRoute = require('./routes/tshirtsRoute');
-
+ 
 mongoose.connect('mongodb://localhost:27017/tshirtDB', {
     useCreateIndex: true, 
     useFindAndModify: false, 
@@ -30,6 +30,10 @@ app.use('/shirt', tshirtRoute);
 
 app.get('/', (req, res) => {
     res.render('home');
+});
+
+app.get('/about', (req, res) => {
+    res.render('aboutUs');
 })
 
 app.listen(3000, () => {
