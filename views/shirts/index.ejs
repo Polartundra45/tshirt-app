@@ -11,7 +11,7 @@
     <div class="con">
         <% for(let shirt of shirts) { %> 
             <div class="listCon">
-                <p><%= shirt.img %></p>
+                <p><img src="<%= shirt.image %>" style="width: 200px;"></p>
                 <p><a href="/shirt/<%= shirt._id %>">"<%= shirt.name.toUpperCase() %>"</a></p>
                 <p>Price: $<%= shirt.price %>.00</p>
                 <p><em>Buy Now</em></p>
